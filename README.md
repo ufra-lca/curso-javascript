@@ -12,9 +12,12 @@ Código que será utilizado no curso de JavaScript realizado pelo LCA Lab
   * 1.5 [Array.prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype#Methods)
   * 1.6 [Exercises#03](null)
  ### Dia 2
-  * 1.7 [Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#Defining_functions)
-  * 1.7.1 [Function expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#Function_expressions)
-  * 1.7.2 [Calling functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#Calling_functions)
-  * 1.7.3 [Function scope](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#Function_scope)
-  * 1.7.4 [Arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#Arrow_functions)
-  * 1.8 [Exercises#04](null)
+  * 1.7 [Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#Objects_and_properties)
+  * 1.8 [Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#Defining_functions)
+  * 1.8.1 [Function expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#Function_expressions)
+  * 1.8.2 [Calling functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#Calling_functions)
+  * 1.8.3 [Function scope](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#Function_scope)
+  * 1.8.4 [Arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#Arrow_functions)
+  * 1.9 [Exercises#04](null)
+  ### Dia 3/4
+  2.[Project]
