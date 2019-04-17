@@ -1,0 +1,16 @@
+{
+  "name": "cursoJS",
+  "version": "1.0.0",
+  "description": "material usado para curso de javaScript",
+  "main": "index.js",
+  "author": "rafael",
+  "license": "MIT",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  },
+  "scripts": {
+    "babel": "babel --preset env ./index.js -o build/main.bundle.js -w"
+  }
+}
