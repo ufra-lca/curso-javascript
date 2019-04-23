@@ -1,11 +1,39 @@
 <html>
 <header>
+    <style>
+        body {
+            display: block;
+            margin-left: auto;
+            margin-right: auto ;
+            background-color: aquamarine;
+            align-content: center;
+        }
 
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 20px;
+            font-family: sans-serif;
+            background-color: grey;
+            width: 70%;
+
+        }
+
+        li {
+            padding-bottom: 10px;
+        }
+    </style>
 </header>
 
 <body>
-    <div>
-        <p id="curso"></p>
+    <div id="App">
+        <h1>Carros o APP</h1>
+        <form>
+            <input type="text" value="search">
+        </form>
+        <ul id="lista-carro">
+
+        </ul>
     </div>
 
     <script src="./bundle.js"></script>
