@@ -1,0 +1,23 @@
+body {
+    max-width: 1300px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+    background-color: aquamarine;
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    font-family: sans-serif;
+    background-color: grey;
+    width: 70%;
+
+}
+
+li {
+    background: red;
+
+}
