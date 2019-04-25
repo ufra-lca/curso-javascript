@@ -2,25 +2,39 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Cars, The App</title>
-    <link href="../src/main.css" rel="stylesheet" type="text/css">
 
+    <title>Cars, The App</title>
+
+    <link href="../src/main.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <div id="App">
 
-        <h1>Carros o APP</h1>
+        <h1>Cars, The App</h1>
 
         <form>
-            <input type="text" placeholder="Buscar">
+            <input type="text" placeholder="Buscar" />
         </form>
 
         <ul id="lista-carro"></ul>
-        <button onclick="" type="button">Cadastrar Carro </button>
-    </div>
 
-    <div id="Cadastro">
+        <form id="add-form">
+            Fabricante:
+            <input type="text" placeholder="Insira o Fabricante do veículo" id="fabricante">
+            <br>
+
+            Modelo:
+            <input type="text" placeholder="Insira o Modelo do veículo" id="modelo">
+            <br>
+
+            Ano:
+            <input type="text" placeholder="Insira o Ano do veículo" id="ano">
+            
+            <button type="submit">Cadastrar</button>
+        </form>
+
+
 
     </div>
 
