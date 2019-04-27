@@ -1,8 +1,12 @@
 export default class Carro{
-    constructor(modelo,fabricante, ano){
+    constructor(id,modelo,fabricante, ano){
+        this.id = id;
         this._modelo = modelo;
         this._fabricante = fabricante;
         this._ano = ano;
+    }
+    getId(){
+        return this.id;
     }
     getModelo(){
         return this._modelo;

@@ -1,18 +1,21 @@
 //CONTROLLER
+
 import Carro from './carro';
 class App {
     constructor() {
         this.listaCarros = [];
         this.formElem = document.getElementById("add-form");
-        this.ulElem = document.getElementById("lista-carro")
+        this.ulElem = document.getElementById("lista-carro");
+        this.id = 0;
         this.startApp();
+        this.deleteCarro = this.deleteCarro.bind(this);
         
     };
 
     //Inicio.
-    startApp (){
-        //this.exibirCarro();
-        console.log("form",this.formElem);
+    startApp() {
+
+        console.log("form", this.formElem);
         this.formElem.onsubmit = event => {
             this.clickCadastrar(event);
         }
@@ -23,34 +26,37 @@ class App {
         this.cadastroCarro();
 
     }
-    //Pega as informações add e manda para a lista de objetos 0.1v
-    exibirCarro() {
-        let c1 = new Carro('uno', 'fiat', '2000');
-        let c2 = new Carro('gol', 'ww', '1992');
-        let c3 = new Carro('fiat','uno','2008')
-        this.listaCarros.push(c1);
-        this.listaCarros.push(c2);
-        this.listaCarros.push(c3);
+    //Deletar carro
+    deleteCarro(id) {
+        const carroToDelete = document.getElementById(`${id}`);
+        if (carroToDelete) {
+            carroToDelete.remove();
+        }
+        const idToDelete = this.listaCarros.findIndex(element => element.id === id);
+        this.listaCarros.splice(idToDelete);
+        console.log(this.listaCarros);
     }
-
+   
     //Pega informações dos input do cadastro 0.1v
     cadastroCarro() {
+        let id = this.id;
         let inputTextF = document.getElementById('fabricante');
         let fabricante = inputTextF.value;
         let inputTextM = document.getElementById('modelo');
         let modelo = inputTextM.value;
         let inputTextA = document.getElementById('ano');
         let ano = inputTextA.value;
-    
-        this.listaCarros.push(new Carro(modelo ,fabricante,ano));
-        console.log(this.listaCarros);
+
+        this.listaCarros.push(new Carro(id, modelo, fabricante, ano));
+        this.id = this.id + 1;
         this.render();
-        
+
     }
 
     //Renderiza as informações.
-    renderItemCarro(carro){
+    renderItemCarro(carro) {
         let liElement = document.createElement('li');
+        liElement.setAttribute("id", `${carro.getId()}`);
 
         //criando paragrafo com o modelo.
         let pElementM = document.createElement('p');
@@ -66,20 +72,36 @@ class App {
         let textElementAno = document.createTextNode('Ano:' + carro.getAno());
         let pElementA = document.createElement('p');
         pElementA.appendChild(textElementAno);
+        
+        //criando botão delete
+        const deleteButton = document.createElement("button");
+        const deleteNode = document.createTextNode("Delete");
+        deleteButton.appendChild(deleteNode);
+        
+        deleteButton.setAttribute("onclick", `deleteCarro(${carro.id})`);
+        
+        //Criando botão edit
+        const editButton = document.createElement("button");
+        const editNode = document.createTextNode("Edit");
+        const textSPace = document.createTextNode("    ");
+        editButton.appendChild(editNode);
+        editButton.setAttribute("onclick", `editCarro(${carro.id})`);
 
         //Juntando os paragrafos e fazendo uma lista.
         liElement.appendChild(pElementF);
         liElement.appendChild(pElementM);
         liElement.appendChild(pElementA);
+        liElement.appendChild(editButton);
+        liElement.appendChild(deleteButton);
         return liElement;
 
     }
-    render () {
+    render() {
         this.ulElem.innerHTML = '';
-        this.listaCarros.forEach(carro => { 
+        this.listaCarros.forEach(carro => {
             this.ulElem.appendChild(this.renderItemCarro(carro));
         });
-        
+
     }
 }
 const app = new App();
@@ -87,6 +109,7 @@ const app = new App();
 
 
 window.app = app;
-/*window.deleteCarro = deleteCarro;
-window.editCarro = editCarro;
-window.carros = carros;*/
+
+window.deleteCarro = app.deleteCarro;
+//window.editCarro = editCarro;
+//window.carros = carros;
