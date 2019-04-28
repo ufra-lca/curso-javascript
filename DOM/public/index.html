@@ -1,11 +1,10 @@
-<html>
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-
     <title>Cars, The App</title>
-
+    <meta charset="UTF-8">
     <link href="../src/main.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 </head>
 
 <body>
@@ -18,20 +17,31 @@
         </form>
 
         <ul id="lista-carro"></ul>
-
+        
         <form id="add-form">
-            Fabricante:
-            <input type="text" placeholder="Insira o Fabricante do veículo" id="fabricante">
-            <br>
 
-            Modelo:
-            <input type="text" placeholder="Insira o Modelo do veículo" id="modelo">
-            <br>
-
-            Ano:
-            <input type="text" placeholder="Insira o Ano do veículo" id="ano">
+            <table>
+                <tr>
+                   <td>Fabricante:</td>
+                   <td><input type="text" placeholder="Insira o Fabricante do veículo" id="fabricante"></td>
+                </tr>
             
-            <button type="submit">Cadastrar</button>
+                <tr>
+                   <td>Modelo:</td>
+                   <td><input type="text" placeholder="Insira o Modelo do veículo" id="modelo"></td>
+                </tr>
+            
+                <tr>
+                   <td>Ano:</td>
+                   <td><input type="text" placeholder="Insira o Ano do veículo" id="ano"></td>
+                </tr>
+            
+                <tr >
+                <tr >
+                   <td><button type="submit" id="btt">Cadastrar</button></td>    
+                </tr>
+            
+            </table>
         </form>
 
 
@@ -41,6 +51,4 @@
 
     <script src="./bundle.js"></script>
 
-</body>
-
-</html>
+</body></html>
