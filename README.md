@@ -1,5 +1,7 @@
+![js](https://user-images.githubusercontent.com/43214946/56856748-79420b80-6937-11e9-9b08-4e79793801b5.jpg)
+
 # Curso-JavaScript
-Código que será utilizado no curso de JavaScript realizado pelo LCA Lab
+Material de apoio e códigos que serão utilizados no curso de JavaScript realizado pelo LCA Lab.
 ## Conteudo
 ### Dia 1
 1. [.Introdução a sintaxe e conceitos de JavaScript](https://developer.mozilla.org/pt-BR/docs/Aprender/Getting_started_with_the_web/JavaScript_basico)
@@ -21,10 +23,10 @@ Código que será utilizado no curso de JavaScript realizado pelo LCA Lab
   * [Classes](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Classes#Definindo_classes)
   exercícios#04
   ### Dia 3
-2. [Projeto]
-  * [Iniciando o projeto]
-  * [Implementação da rotina de cadastro]
-  * [Implementação da rotina de busca]
+Projeto
+  * Iniciando o projeto
+  * Implementação da rotina de cadastro
+  * Implementação da rotina de busca
   ### Dia 4
-  * [Implementação da rotina de exclusão]
-  * [Implementação da rotina de salvar dados]
+  * Implementação da rotina de exclusão
+  * Implementação da rotina de salvar dados
