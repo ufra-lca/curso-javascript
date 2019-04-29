@@ -9,6 +9,7 @@ class App {
         this.id = 0;
         this.startApp();
         this.deleteCarro = this.deleteCarro.bind(this);
+        this.editCarro = this.editCarro.bind(this);
         
     };
 
@@ -26,6 +27,7 @@ class App {
         this.cadastroCarro();
 
     }
+
     //Deletar carro
     deleteCarro(id) {
         const carroToDelete = document.getElementById(`${id}`);
@@ -34,6 +36,18 @@ class App {
         }
         const idToDelete = this.listaCarros.findIndex(element => element.id === id);
         this.listaCarros.splice(idToDelete);
+        console.log(this.listaCarros);
+    }
+
+    //Editar carro
+    editCarro(id) {
+        const carro = new Carro(id, fabricante, modelo, ano);
+        const carroToEdit = document.getElementById(`${id}`);
+        if (carroToEdit) {
+          carroToEdit.childNodes[0].nodeValue = `${carro.nome}  ${carro.fabricante} ${carro.ano}`;
+        }
+        const idToEdit = listaCarros.findIndex(element => element.id === id);
+        listaCarros[idToEdit] = carro;
         console.log(this.listaCarros);
     }
    
@@ -76,8 +90,7 @@ class App {
         //criando botão delete
         const deleteButton = document.createElement("button");
         const deleteNode = document.createTextNode("Delete");
-        deleteButton.appendChild(deleteNode);
-        
+        deleteButton.appendChild(deleteNode);        
         deleteButton.setAttribute("onclick", `deleteCarro(${carro.id})`);
         
         //Criando botão edit
@@ -111,5 +124,5 @@ const app = new App();
 window.app = app;
 
 window.deleteCarro = app.deleteCarro;
-//window.editCarro = editCarro;
+window.editCarro = app.editCarro;
 //window.carros = carros;
