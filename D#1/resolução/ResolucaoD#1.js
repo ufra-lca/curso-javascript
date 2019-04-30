@@ -23,8 +23,18 @@ let refrigerante = 50;
 let acompanhamentos = (arroz + feijão + frango + refrigerante);
 let resposta = (acompanhamentos === 550);
 console.log(resposta);
-
-//5. Uma escola com cursos em regime semestral, realiza duas avaliações durante o semestre e calcula a média do aluno, da seguinte maneira: MEDIA = (P1 + 2P2) / 3 Fazer um programa para inserir os valores das notas (P1 e P2) e calcular a média. Exibir a situação final do aluno (“Aprovado ou Reprovado”), sabendo que a média de aprovação é igual a cinco.
+//5.	Calcule a soma, subtração, multiplicação e divisão de dois números quaisquer e mostre no console o resultado.
+let a = 9;
+let b = 3;
+let soma = (a+b);
+let subtracao= (a-b);
+let multi = (a * b);
+let divisao = (a/b);
+console.log('Seu resultado é' , soma);
+console.log('Seu resultado é' , subtracao);
+console.log('Seu resultado é' , multi);
+console.log('Seu resultado é' , divisao);
+//6. Uma escola com cursos em regime semestral, realiza duas avaliações durante o semestre e calcula a média do aluno, da seguinte maneira: MEDIA = (P1 + 2P2) / 3 Fazer um programa para inserir os valores das notas (P1 e P2) e calcular a média. Exibir a situação final do aluno (“Aprovado ou Reprovado”), sabendo que a média de aprovação é igual a cinco.
 let notaP1 = 10;
 let notaP2 = 5;
 let media = (notaP1 + notaP2)/3;
@@ -34,8 +44,7 @@ if(media >= 5){
 else{
   console.log("Reprovado!")
 }
-//
-// 4. Entrar com o peso e a altura de uma determinada pessoa. Após a digitação, exibir se esta pessoa está ou não com seu peso ideal. Veja tabela da relação peso/altura2.
+// 7.	Entrar com o peso e a altura de uma determinada pessoa. Após a digitação, exibir se esta pessoa está ou não com seu peso ideal. Veja tabela da relação peso/altura2.
 //Relação peso/altura2 (imc) 
 //imc < 20 Abaixo do peso
 //20 <= imc < 25 Peso ideal
@@ -53,3 +62,22 @@ else if(imc >= 20 && imc < 25){
 else{
   console.log("Acima do peso")
 }
+//8.	A partir de dois valores. Mostre no console o maior deles.
+let num1 = 10;
+let num2 = 5;
+if(num1 > num2){
+	console.log('O maior entre eles é', num1);
+}
+else{
+	console.log('O maior entre eles é', num2);
+}
+//9.	A partir de dois valores. Mostre no console o menor deles.
+let num1 = 10;
+let num2 = 5;
+if(num1 < num2){
+	console.log('O menor entre eles é', num1);
+}
+else{
+	console.log('O menor entre eles é', num2);
+}
+

@@ -80,3 +80,4 @@ if(num1 < num2){
 else{
 	console.log('O menor entre eles é', num2);
 }
+
